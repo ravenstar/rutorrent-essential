@@ -105,8 +105,8 @@ read -r SERVFTP
 
 function FONCHTPASSWD ()
 {
-htpasswd -bs "$NGINXPASS"/rutorrent_passwd "$1" "${PASSNGINX}"
-htpasswd -cbs "$NGINXPASS"/rutorrent_passwd_"$1" "$1" "${PASSNGINX}"
+htpasswd -b "$NGINXPASS"/rutorrent_passwd "$1" "${PASSNGINX}"
+htpasswd -cb "$NGINXPASS"/rutorrent_passwd_"$1" "$1" "${PASSNGINX}"
 chmod 640 "$NGINXPASS"/*
 chown -c www-data:www-data "$NGINXPASS"/*
 service nginx restart
