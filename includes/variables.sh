@@ -16,7 +16,7 @@ MEDIAINFO="0.7.79"
 MULTIMEDIA="deb-multimedia-keyring_2015.6.1_all.deb"
 
 RUTORRENT="/var/www/rutorrent"
-ESSENTIAL="/tmp/rutorrent-essential"
+ESSENTIAL="/root/rutorrent-essential"
 FILES="/root/rutorrent-essential/files"
 SBM="/var/www/seedbox-manager"
 NGINX="/etc/nginx/"
