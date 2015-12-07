@@ -18,3 +18,4 @@ min_peers_seed = 10
 max_peers_seed = 50
 max_uploads = 15
 execute = {sh,-c,/usr/bin/php @RUTORRENT@/php/initplugins.php @USER@ &}
+system.method.set_key = event.download.finished,checkcomplete,"execute=/opt/packer.sh,$d.get_base_path=,$d.get_base_filename="
