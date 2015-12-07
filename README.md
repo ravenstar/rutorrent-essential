@@ -1,3 +1,5 @@
+# This is a private fork which includes modifications for my own personal use. Refer to the original source for more info/support/etc.
+
 # Script d'installation ruTorrent / Nginx
 
 * Multi-utilisateurs & Multilingue automatique en fonction de l'installation du serveur.
@@ -30,10 +32,10 @@ Multilingue automatique
 apt-get update && apt-get upgrade -y
 apt-get install git-core -y
 
-cd /tmp
-git clone https://github.com/exrat/rutorrent-essential
+cd /root
+git clone https://github.com/ravenstar/rutorrent-essential
 cd rutorrent-essential
-chmod a+x essential.sh && ./essential.sh
+chmod a+x essential.sh && ./essential.sh --en
 ```
 
 **Vous pouvez aussi forcer la langue de votre choix:**
